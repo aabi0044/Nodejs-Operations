@@ -3,7 +3,7 @@ const app=express();
 const Joi=require('joi');
 const logger =require('./logger');
 app.use(express.json());
-app.use(logger);
+app.use(express.urlencoded());
 const courses=[
     {id: 1 ,name:'course1'},
     {id: 2 ,name:'course2'},
